@@ -64,9 +64,8 @@ namespace WeatherGenerator
          */
         private static string RandomDouble(int max, int min, int decimalPlaces)
         {
-            Random random = new Random();
-            double degrees = random.NextDouble() * (max - min) + min;
-            return degrees.ToString($"F{decimalPlaces}");
+            double number = new Random().NextDouble() * (max - min) + min;
+            return number.ToString($"F{decimalPlaces}");
         }
 
 
